@@ -1,0 +1,54 @@
+:root {
+  /* Colors - Light Theme Base (White/Ash/Black) */
+  --color-bg-primary: #ffffff;
+  /* White */
+  --color-bg-secondary: #f3f4f6;
+  /* Ash / Light Gray */
+  --color-bg-glass: rgba(255, 255, 255, 0.7);
+
+  /* Text Colors */
+  --color-text-primary: #111827;
+  /* Near Black */
+  --color-text-secondary: #4b5563;
+  /* Dark Gray */
+  --color-text-muted: #9ca3af;
+  /* Muted Gray */
+
+  /* Brand Colors - Adjusted for Light Theme */
+  --color-primary: #4f46e5;
+  /* Indigo (Same, contrast checks out) */
+  --color-primary-light: #818cf8;
+  --color-secondary: #0891b2;
+  /* Slightly darker Cyan for better contrast on white */
+  --color-accent: #db2777;
+  /* Pink accent */
+
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  --gradient-text: linear-gradient(to right, #4f46e5, #0891b2);
+  /* Darker for light bg */
+  --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Effects */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 4px 14px 0 rgba(79, 70, 229, 0.3);
+  /* Softer glow for light theme */
+  --backdrop-blur: blur(12px);
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
+  --border-radius-lg: 2rem;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}

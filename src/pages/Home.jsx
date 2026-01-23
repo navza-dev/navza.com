@@ -150,15 +150,61 @@ const Home = () => {
             </section>
 
             {/* Testimonials */}
+            {/* Testimonials */}
             <section className="section testimonials-section">
                 <div className="container">
                     <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>What Our Clients Say</h2>
-                    <div className="glass-card" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-                        <p style={{ fontSize: '1.25rem', fontStyle: 'italic', marginBottom: '1.5rem' }}>
-                            "Navza helped us get more leads in 30 days than our previous agency did in 6 months."
-                        </p>
-                        <h4 className="text-gradient">Happy Client</h4>
-                        <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>CEO, Tech Startup</p>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                        {[
+                            {
+                                id: 1,
+                                quote: "Navza helped us get more leads in 30 days than our previous agency did in 6 months. Truly impressive work!",
+                                name: "Shalindi Bandaranayake",
+                                role: "Founder, Lumina Tea Exports"
+                            },
+                            {
+                                id: 2,
+                                quote: "Navza transformed our online presence completely. The new site is not just beautiful, it's a customer magnet.",
+                                name: "Nilan Jayaweera",
+                                role: "Director, Zenith Constructions"
+                            },
+                            {
+                                id: 3,
+                                quote: "Professional, timely, and incredibly talented. They understood our brand voice immediately and delivered perfection.",
+                                name: "Aarav Gupta",
+                                role: "Head of Operations, Novus Tech Solutions"
+                            },
+                            {
+                                id: 4,
+                                quote: "The ROI we've seen since launching the new platform has been exceptional. Highly recommended for any growing business.",
+                                name: "Michael Ross",
+                                role: "CTO, FinStream Global"
+                            },
+                            {
+                                id: 5,
+                                quote: "Best development team I've worked with. They handled complexity with ease and delivered on time.",
+                                name: "Elena Rodriguez",
+                                role: "Product Manager, CloudScale Systems"
+                            }
+                        ].map((testimonial) => (
+                            <motion.div
+                                key={testimonial.id}
+                                className="glass-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: testimonial.id * 0.1 }}
+                                style={{ textAlign: 'center', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+                            >
+                                <p style={{ fontSize: '1.1rem', fontStyle: 'italic', marginBottom: '1.5rem', flex: 1 }}>
+                                    "{testimonial.quote}"
+                                </p>
+                                <div>
+                                    <h4 className="text-gradient" style={{ marginBottom: '0.25rem' }}>{testimonial.name}</h4>
+                                    <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', margin: 0 }}>{testimonial.role}</p>
+                                </div>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import Button from './Button';
 import '../styles/Navbar.css';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -41,7 +41,7 @@ const Navbar = () => {
         <nav className={navbarClass}>
             <div className="container navbar-container">
                 <NavLink to="/" className="navbar-logo">
-                    <img src={logo} alt="NavZa" style={{ height: '70px', borderRadius: '5px' }} />
+                    <img src={logo} alt="NavZa" style={{ height: '80px', borderRadius: '5px' }} />
                 </NavLink>
 
                 {/* Desktop Menu */}

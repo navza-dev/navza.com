@@ -39,7 +39,7 @@ const projects = [
     },
     {
         id: 5,
-        title: 'ISell Lanka',
+        title: 'VERA',
         category: 'E-commerce Platform',
         description: 'A full online store built to sell products, manage orders, and process payments. Designed for performance, usability, and scalability to support business growth.',
         image: proj5

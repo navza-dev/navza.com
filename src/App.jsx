@@ -16,8 +16,15 @@ function App() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+  const isHome = location.pathname === '/';
+
   return (
-    <div className="app">
+    <div className="app" style={{
+      backgroundColor: isHome ? 'transparent' : 'var(--color-bg-subtle)',
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column'
+    }}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

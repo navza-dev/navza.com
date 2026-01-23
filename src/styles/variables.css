@@ -4,6 +4,8 @@
   /* White */
   --color-bg-secondary: #f3f4f6;
   /* Ash / Light Gray */
+  --color-bg-subtle: #eef2ff;
+  /* Very Light Indigo for pages */
   --color-bg-glass: rgba(255, 255, 255, 0.7);
 
   /* Text Colors */
